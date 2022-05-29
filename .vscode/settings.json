@@ -36,11 +36,14 @@
 	"editor.formatOnSave": true,
 	"python.analysis.autoImportCompletions": true,
 	"python.autoComplete.extraPaths": [
-		"/opt/ros/humble/lib/python3.8/site-packages"
+		"/opt/ros/humble/lib/python3.10/site-packages"
 	],
 	"python.analysis.extraPaths": [
-		"/opt/ros/humble/lib/python3.8/site-packages"
+		"/opt/ros/humble/lib/python3.10/site-packages"
 	],
+	"python.analysis.autoSearchPaths": true,
+	"python.analysis.completeFunctionParens": true,
+	"python.analysis.useLibraryCodeForTypes": true,
 	"vsintellicode.features.python.deepLearning": "enabled",
 	"vsintellicode.python.completionsEnabled": true,
 	"vsintellicode.sql.completionsEnabled": true,
