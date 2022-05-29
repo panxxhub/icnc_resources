@@ -1,0 +1,32 @@
+{
+	"name": "moveit2",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"ROS_DISTRO": "humble"
+		}
+	},
+	"runArgs": [],
+	"settings": {},
+	"extensions": [
+		"llvm-vs-code-extensions.vscode-clangd",
+		"ms-vscode.cpptools-extension-pack",
+		"twxs.cmake",
+		"ms-vscode.cmake-tools",
+		"ms-vscode.makefile-tools",
+		"ms-iot.vscode-ros",
+		"github.copilot",
+		"visualstudioexptteam.vscodeintellicode",
+		"gruntfuggly.todo-tree",
+		"redhat.vscode-xml",
+		"github.vscode-pull-request-github",
+		"eamodio.gitlens",
+		"felipecaputo.git-project-manager",
+		"streetsidesoftware.code-spell-checker",
+		"ms-azuretools.vscode-docker",
+		"redhat.vscode-yaml",
+		"smilerobotics.urdf",
+		"sweilz.ros-snippets"
+	],
+	"remoteUser": "root"
+}

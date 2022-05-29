@@ -1,0 +1,51 @@
+{
+	"ros.distro": "humble",
+	"editor.fontFamily": "'Fira Code Retina', 'Cascadia Code', 'Jetbrains Mono', Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.lightbulb.enabled": true,
+	"workbench.colorTheme": "Default Dark+",
+	"C_Cpp.autocomplete": "Default",
+	"C_Cpp.intelliSenseEngine": "Disabled",
+	"clangd.path": "clangd-14",
+	"clangd.arguments": [
+		"--clang-tidy=true",
+		"--suggest-missing-includes=true",
+		"--background-index=true",
+		"--all-scopes-completion=true",
+		"--completion-style=detailed",
+		"--header-insertion=iwyu",
+		"--header-insertion-decorators",
+		"--compile-commands-dir=${workspaceFolder}/build",
+		"--pch-storage=memory",
+		"--pretty",
+		"-j=8"
+	],
+	"cSpell.words": [
+		"buildtool",
+		"chrono",
+		"moveit",
+		"ompl",
+		"rclcpp",
+		"Ruckig",
+		"urdf",
+		"waitables",
+		"xacro"
+	],
+	"terminal.integrated.fontFamily": "Hasklug NF",
+	"editor.semanticHighlighting.enabled": true,
+	"editor.formatOnSave": true,
+	"python.analysis.autoImportCompletions": true,
+	"python.autoComplete.extraPaths": [
+		"/opt/ros/humble/lib/python3.8/site-packages"
+	],
+	"python.analysis.extraPaths": [
+		"/opt/ros/humble/lib/python3.8/site-packages"
+	],
+	"vsintellicode.features.python.deepLearning": "enabled",
+	"vsintellicode.python.completionsEnabled": true,
+	"vsintellicode.sql.completionsEnabled": true,
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"cSpell.enableFiletypes": [
+		"xml"
+	]
+}
