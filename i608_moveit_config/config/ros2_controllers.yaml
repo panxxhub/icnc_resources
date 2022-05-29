@@ -3,7 +3,7 @@ controller_manager:
     update_rate: 8000
 
     i608_arm_controller:
-      type: fake_controllers/FakeFollowTrajectoryController
+      type: icnc_controllers/I608JointController
 
     joint_state_controller:
       type: joint_state_controller/JointStateBroadcaster
