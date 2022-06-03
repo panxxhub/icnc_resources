@@ -12,12 +12,6 @@
   <exec_depend>icnc_resources_i608_description</exec_depend>
   <exec_depend>icnc_resources_i608_moveit_config</exec_depend>
 
-  <exec_depend>icnc_resources_i406_description</exec_depend>
-  <exec_depend>icnc_resources_i406_moveit_config</exec_depend>
-
-  <exec_depend>icnc_resources_i3_description</exec_depend>
-  <exec_depend>icnc_resources_i3_moveit_config</exec_depend>
-
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
 
