@@ -163,4 +163,46 @@
 		<child link="gripper" />
 		<axis xyz="0 0.015937 0.99987" />
 	</joint>
+
+	<ros2_control name="I608SystemPV" type="system">
+		<hardware>
+			<plugin>icnc_control_hardware/I608FakeSystemHardware</plugin>
+		</hardware>
+		<joint name="joint_1">
+			<command_interface name="position"></command_interface>
+			<command_interface name="velocity"></command_interface>
+			<state_interface name="position"></state_interface>
+			<state_interface name="velocity"></state_interface>
+		</joint>
+		<joint name="joint_2">
+			<command_interface name="position"></command_interface>
+			<command_interface name="velocity"></command_interface>
+			<state_interface name="position"></state_interface>
+			<state_interface name="velocity"></state_interface>
+		</joint>
+		<joint name="joint_3">
+			<command_interface name="position"></command_interface>
+			<command_interface name="velocity"></command_interface>
+			<state_interface name="position"></state_interface>
+			<state_interface name="velocity"></state_interface>
+		</joint>
+		<joint name="joint_4">
+			<command_interface name="position"></command_interface>
+			<command_interface name="velocity"></command_interface>
+			<state_interface name="position"></state_interface>
+			<state_interface name="velocity"></state_interface>
+		</joint>
+		<joint name="joint_5">
+			<command_interface name="position"></command_interface>
+			<command_interface name="velocity"></command_interface>
+			<state_interface name="position"></state_interface>
+			<state_interface name="velocity"></state_interface>
+		</joint>
+		<joint name="joint_6">
+			<command_interface name="position"></command_interface>
+			<command_interface name="velocity"></command_interface>
+			<state_interface name="position"></state_interface>
+			<state_interface name="velocity"></state_interface>
+		</joint>
+	</ros2_control>
 </robot>
