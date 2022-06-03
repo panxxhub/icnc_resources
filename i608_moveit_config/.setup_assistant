@@ -1,6 +1,0 @@
-moveit_setup_assistant_config:
-  URDF:
-    package: icnc_resources_i608_description
-    relative_path: urdf/i608.urdf
-  SRDF:
-    relative_path: config/i608_arm.srdf.xacro
