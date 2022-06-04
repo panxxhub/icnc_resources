@@ -166,7 +166,7 @@
 
 	<ros2_control name="I608SystemPV" type="system">
 		<hardware>
-			<plugin>icnc_hardware_interfaces/I608FakeHardwareInterface</plugin>
+			<plugin>icnc_fake_hardware_interfaces/I608FakeHardwareInterface</plugin>
 		</hardware>
 		<joint name="joint_1">
 			<command_interface name="position"></command_interface>
