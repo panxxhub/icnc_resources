@@ -1,3 +1,2 @@
-FROM moveit_core
-
-RUN echo "source /ws_moveit2/install/setup.sh" >> "/root/.bashrc"
+ARG ROS_DISTRO=galactic
+FROM moveit/moveit2:${ROS_DISTRO}-release

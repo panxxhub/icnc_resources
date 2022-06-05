@@ -1,5 +1,5 @@
 {
-	"ros.distro": "humble",
+	"ros.distro": "galactic",
 	"editor.fontFamily": "'Fira Code Retina', 'Cascadia Code', 'Jetbrains Mono', Consolas, 'Courier New', monospace",
 	"editor.fontLigatures": true,
 	"editor.lightbulb.enabled": true,
@@ -36,10 +36,10 @@
 	"editor.formatOnSave": true,
 	"python.analysis.autoImportCompletions": true,
 	"python.autoComplete.extraPaths": [
-		"/opt/ros/humble/lib/python3.10/site-packages"
+		"/opt/ros/galactic/lib/python3.8/site-packages"
 	],
 	"python.analysis.extraPaths": [
-		"/opt/ros/humble/lib/python3.10/site-packages"
+		"/opt/ros/galactic/lib/python3.8/site-packages"
 	],
 	"python.analysis.autoSearchPaths": true,
 	"python.analysis.completeFunctionParens": true,
