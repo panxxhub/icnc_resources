@@ -9,7 +9,7 @@ def generate_launch_description():
         MoveItConfigsBuilder("icnc_resources_i608")
         .robot_description(file_path="config/i608.urdf.xacro")
         .robot_description_semantic(file_path="config/i608_arm.srdf.xacro")
-        .robot_description_kinematics(file_path="config/kinematics.yaml")
+        .trajectory_execution(file_path="config/i608_moveit_controllers.yaml", moveit_manage_controllers=False)
         .planning_pipelines(default_planning_pipeline="ompl", pipelines=["ompl"])
         .to_moveit_configs()
     )
