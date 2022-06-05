@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="i608">
 	<xacro:macro name="i608_arm">
 		<group name="i608_arm">
-			<chain base="base_link" tip="link_6" />
+			<chain base_link="base_link" tip_link="link_6" />
 		</group>
 
 		<group name="hand">
