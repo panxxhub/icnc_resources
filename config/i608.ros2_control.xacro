@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="i608">
-	<xacro:macro name="i608_ros2_control" params="name initial_position_file">
+	<xacro:macro name="i608_ros2_control" params="name initial_positions_file">
 
 		<xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"></xacro:property>
 		<ros2_control name="${name}" type="system">
