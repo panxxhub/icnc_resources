@@ -1,0 +1,20 @@
+<launch>
+	<arg name="load_robot_description" default="false" />
+
+	<arg name="robot_description_param" default="robot_description" />
+
+	<param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find icnc_resources_i608_description)/urdf/i608.urdf" />
+
+	<param name="$(arg robot_description)_semantic" textfile="$(find icnc_resources_i608_moveit_config)/config/i608.srdf" />
+
+	<group ns="$(arg robot_description)_planning">
+		<rosparam command="load" file="$(find icnc_resources_i608_moveit_config)/config/joint_limits.yaml" />
+		<rosparam command="load" file="$(find icnc_resources_i608_moveit_config)/config/cartesian_limits.yaml" />
+	</group>
+
+	<group ns="$(arg robot_description)_kinematics">
+		<rosparam command="load" file="$(find icnc_resources_i608_moveit_config)/config/kinematics.yaml" />
+
+	</group>
+
+</launch>

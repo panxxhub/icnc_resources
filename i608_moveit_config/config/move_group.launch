@@ -1,0 +1,21 @@
+<launch>
+
+	<arg name="debug" default="false" />
+	<arg unless="$(arg debug)" name="launch_prefix" value="" />
+	<!-- TODO(pan) use lldb instead -->
+	<arg if="$(arg debug)" name="launch_prefix" value="gdb -x $(dirname)/gdb_settings.gdb -ex run --args" />
+
+
+	<!-- Verbose Mode option -->
+	<arg name="info" default="$(arg debug)" />
+	<arg unless="$(arg info)" name="command_args" value="" />
+	<arg if="$(arg info)" name="command_args" value="--verbose" />
+
+
+	<!-- move_group settings -->
+	<arg name="pipeline" default="ompl" />
+	<arg name="allow_trajectory_execution" default="true" />
+	<arg name="moveit_controller_manager" default="simple" />
+
+
+</launch>

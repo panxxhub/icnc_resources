@@ -1,0 +1,6 @@
+<launch>
+	<arg name="pipeline" default="ompl" />
+
+	<include ns="$(arg pipeline)" file="$(dirname)/$(arg pipeline)_planning_pipeline.launch.xml" />
+
+</launch>
