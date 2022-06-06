@@ -18,8 +18,9 @@ def generate_launch_description():
     ''' dump to yaml file '''
     with open("moveit_config.yaml", "w") as f:
         yaml.dump(moveit_configs.to_dict(), f, default_flow_style=False)
-    
-
+    moveit_config_dict = moveit_configs.to_dict()
+    # joint_limits = load_yaml()
+    # moveit_config_dict["robot_description_planning"] += moveit_configs[]
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
