@@ -6,7 +6,7 @@ from moveit_configs_utils import MoveItConfigsBuilder
 
 
 def generate_launch_description():
-    moveit_config = (
+    moveit_config_builder = (
         MoveItConfigsBuilder("icnc_resources_i608")
         .robot_description(file_path="config/i608.urdf.xacro")
         .robot_description_semantic(file_path="config/i608_arm.srdf.xacro")
@@ -17,16 +17,16 @@ def generate_launch_description():
     )
     ''' dump to yaml file '''
     with open("moveit_config.yaml", "w") as f:
-        yaml.dump(moveit_config.to_dict(), f, default_flow_style=False)
+        yaml.dump(moveit_config_builder.to_dict(), f, default_flow_style=False)
     with open("moveit_config_.yaml", "w") as f:
-        yaml.dump(moveit_config.to_moveit_configs().to_dict(), f, default_flow_style=False)
+        yaml.dump(moveit_config_builder.to_moveit_configs().to_dict(), f, default_flow_style=False)
     
 
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict()]
+        parameters=[moveit_config_builder.to_moveit_configs().to_dict()]
     )
 
     static_tf_node = Node(
@@ -42,7 +42,7 @@ def generate_launch_description():
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="log",
-        parameters=[moveit_config.robot_description],
+        parameters=[moveit_config_builder.robot_description],
     )
 
     return LaunchDescription([
