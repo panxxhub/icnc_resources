@@ -11,7 +11,6 @@ def generate_launch_description():
         .robot_description(file_path="config/i608.urdf.xacro")
         .robot_description_semantic(file_path="config/i608_arm.srdf.xacro")
         .joint_limits(file_path="config/joint_limits.yaml")
-        .cartesian_limits(file_path="config/cartesian_limits.yaml")
         .trajectory_execution(file_path="config/i608_moveit_controllers.yaml", moveit_manage_controllers=False)
         .planning_pipelines(default_planning_pipeline="ompl", pipelines=["ompl"])
         .to_moveit_configs()
