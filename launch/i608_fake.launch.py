@@ -15,6 +15,9 @@ def generate_launch_description():
         .planning_pipelines(default_planning_pipeline="ompl", pipelines=["ompl"])
         .to_moveit_configs()
     )
+    ''' dump to yaml file '''
+    with open("moveit_config.yaml", "w") as f:
+        f.write(moveit_config.to_yaml())
 
     move_group_node = Node(
         package="moveit_ros_move_group",

@@ -47,6 +47,7 @@
 	"vsintellicode.features.python.deepLearning": "enabled",
 	"vsintellicode.python.completionsEnabled": true,
 	"vsintellicode.sql.completionsEnabled": true,
+	"editor.renderWhitespace": "all",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"cSpell.enableFiletypes": [
 		"xml"
