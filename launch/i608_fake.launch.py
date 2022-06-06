@@ -1,3 +1,4 @@
+import yaml
 from ament_index_python import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -17,7 +18,7 @@ def generate_launch_description():
     )
     ''' dump to yaml file '''
     with open("moveit_config.yaml", "w") as f:
-        f.write(moveit_config.to_yaml())
+        yaml.dump(moveit_config, f, default_flow_style=False)
 
     move_group_node = Node(
         package="moveit_ros_move_group",
