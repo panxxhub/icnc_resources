@@ -9,7 +9,7 @@ request_adapters: >-
 
 
 start_state_max_bounds_error: 0.1
-resample_dt: 0.05
+resample_dt: 0.01
 
 planner_configs:
   SBLkConfigDefault:
