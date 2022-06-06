@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="i608">
-	<xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+	<!-- <xacro:arg name="initial_positions_file" default="initial_positions.yaml" /> -->
 
 	<xacro:include filename="$(find icnc_resources_i608_description)/urdf/i608.urdf" />
 
 	<xacro:include filename="i608.ros2_control.xacro" />
 
-	<xacro:i608_ros2_control name="I608SystemPV" initial_positions_file="$(arg initial_positions_file)" />
+	<!-- initial_positions_file="$(arg initial_positions_file)" -->
+	<xacro:i608_ros2_control name="I608SystemPV" />
 </robot>
