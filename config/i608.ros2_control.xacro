@@ -1,50 +1,50 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="i608">
-	<xacro:macro name="i608_ros2_control">
-		<ros2_control type="system">
+	<xacro:macro name="i608_ros2_control" params="name">
+		<ros2_control name="${name}" type="system">
 			<hardware>
 				<plugin>icnc_fake_hardware_interfaces/I608FakeHardwareInterface</plugin>
 			</hardware>
 			<joint name="joint_1">
-				<command_interface name="position"></command_interface>
-				<command_interface name="velocity"></command_interface>
-				<state_interface name="position"></state_interface>
-				<state_interface name="velocity"></state_interface>
+				<command_interface name="position" />
+				<command_interface name="velocity" />
+				<state_interface name="position" />
+				<state_interface name="velocity" />
 			</joint>
 
 			<joint name="joint_2">
-				<command_interface name="position"></command_interface>
-				<command_interface name="velocity"></command_interface>
-				<state_interface name="position"></state_interface>
-				<state_interface name="velocity"></state_interface>
+				<command_interface name="position" />
+				<command_interface name="velocity" />
+				<state_interface name="position" />
+				<state_interface name="velocity" />
 			</joint>
 
 			<joint name="joint_3">
-				<command_interface name="position"></command_interface>
-				<command_interface name="velocity"></command_interface>
-				<state_interface name="position"></state_interface>
-				<state_interface name="velocity"></state_interface>
+				<command_interface name="position" />
+				<command_interface name="velocity" />
+				<state_interface name="position" />
+				<state_interface name="velocity" />
 			</joint>
 
 			<joint name="joint_4">
-				<command_interface name="position"></command_interface>
-				<command_interface name="velocity"></command_interface>
-				<state_interface name="position"></state_interface>
-				<state_interface name="velocity"></state_interface>
+				<command_interface name="position" />
+				<command_interface name="velocity" />
+				<state_interface name="position" />
+				<state_interface name="velocity" />
 			</joint>
 
 			<joint name="joint_5">
-				<command_interface name="position"></command_interface>
-				<command_interface name="velocity"></command_interface>
-				<state_interface name="position"></state_interface>
-				<state_interface name="velocity"></state_interface>
+				<command_interface name="position" />
+				<command_interface name="velocity" />
+				<state_interface name="position" />
+				<state_interface name="velocity" />
 			</joint>
 
 			<joint name="joint_6">
-				<command_interface name="position"></command_interface>
-				<command_interface name="velocity"></command_interface>
-				<state_interface name="position"></state_interface>
-				<state_interface name="velocity"></state_interface>
+				<command_interface name="position" />
+				<command_interface name="velocity" />
+				<state_interface name="position" />
+				<state_interface name="velocity" />
 			</joint>
 		</ros2_control>
 	</xacro:macro>
