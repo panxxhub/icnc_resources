@@ -35,7 +35,11 @@ def generate_launch_description():
     moveit_config_dict = moveit_configs.to_dict()
     joint_limits = load_yaml(
         "icnc_resources_i608_moveit_config", "config/joint_limits.yaml")
-    moveit_config_dict["robot_description_planning"] += joint_limits
+    cartesian_limits = load_yaml(
+        "icnc_resources_i608_moveit_config", "config/cartesian_limits.yaml")
+
+    moveit_config_dict["robot_description_planning"] = [
+        joint_limits, cartesian_limits]
     with open("moveit_config.yaml", "w") as f:
         yaml.dump(moveit_config_dict, f, default_flow_style=False)
 
