@@ -14,17 +14,19 @@ def generate_launch_description():
         .cartesian_limits(file_path="config/cartesian_limits.yaml")
         .trajectory_execution(file_path="config/i608_moveit_controllers.yaml", moveit_manage_controllers=False)
         .planning_pipelines(default_planning_pipeline="ompl", pipelines=["ompl"])
-        .to_moveit_configs()
     )
     ''' dump to yaml file '''
     with open("moveit_config.yaml", "w") as f:
         yaml.dump(moveit_config.to_dict(), f, default_flow_style=False)
+    with open("moveit_config_.yaml", "w") as f:
+        yaml.dump(moveit_config.to_moveit_configs().to_dict(), f, default_flow_style=False)
+    
 
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config]
+        parameters=[moveit_config.to_dict()]
     )
 
     static_tf_node = Node(
