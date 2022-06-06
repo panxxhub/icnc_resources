@@ -49,7 +49,7 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_configs.to_dict()]
+        parameters=[moveit_config_dict]
     )
 
     static_tf_node = Node(
