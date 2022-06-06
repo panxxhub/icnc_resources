@@ -1,8 +1,24 @@
+import os
 import yaml
 from ament_index_python import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from moveit_configs_utils import MoveItConfigsBuilder
+
+
+def get_absolute_file_path(package_name, file_path):
+    package_path = get_package_share_directory(package_name=package_name)
+    absolute_file_path = os.path.join(package_path, file_path)
+    return absolute_file_path
+
+
+def load_yaml(package_name, file_path):
+    absolute_file_path = get_absolute_file_path(package_name, file_path)
+    try:
+        with open(absolute_file_path, "r") as file:
+            return yaml.safe_load(file)
+    except EnvironmentError:
+        return None
 
 
 def generate_launch_description():
@@ -16,11 +32,13 @@ def generate_launch_description():
         .to_moveit_configs()
     )
     ''' dump to yaml file '''
-    with open("moveit_config.yaml", "w") as f:
-        yaml.dump(moveit_configs.to_dict(), f, default_flow_style=False)
     moveit_config_dict = moveit_configs.to_dict()
-    # joint_limits = load_yaml()
-    # moveit_config_dict["robot_description_planning"] += moveit_configs[]
+    joint_limits = load_yaml(
+        "icnc_resources_i608_moveit_config", "config/joint_limits.yaml")
+    moveit_config_dict["robot_description_planning"] += joint_limits
+    with open("moveit_config.yaml", "w") as f:
+        yaml.dump(moveit_config_dict, f, default_flow_style=False)
+
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
