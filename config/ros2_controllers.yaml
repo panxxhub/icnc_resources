@@ -13,7 +13,6 @@ i608_arm_controller:
     command_interfaces:
       - position
       - velocity
-      - acceleration
     state_interfaces:
       - position
       - velocity
