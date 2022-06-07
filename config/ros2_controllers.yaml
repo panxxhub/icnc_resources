@@ -8,6 +8,22 @@ controller_manager:
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
+i608_arm_controller:
+  ros__parameters:
+    command_interfaces:
+      - position
+      - velocity
+      - acceleration
+    state_interfaces:
+      - position
+      - velocity
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6
     joint_limits:
       joint_1:
         has_velocity_limits: true
@@ -57,20 +73,3 @@ controller_manager:
         max_acceleration: 5.0
         has_jerk_limits: true
         max_jerk: 142.0
-
-i608_arm_controller:
-  ros__parameters:
-    command_interfaces:
-      - position
-      - velocity
-      - acceleration
-    state_interfaces:
-      - position
-      - velocity
-    joints:
-      - joint_1
-      - joint_2
-      - joint_3
-      - joint_4
-      - joint_5
-      - joint_6
