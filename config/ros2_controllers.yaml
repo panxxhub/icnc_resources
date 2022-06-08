@@ -5,8 +5,8 @@ controller_manager:
     i608_arm_controller:
       type: icnc_controllers/IcncJointTrajectoryController
 
-    # joint_state_broadcaster:
-    #   type: joint_state_broadcaster/JointStateBroadcaster
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
 
 i608_arm_controller:
   ros__parameters:
