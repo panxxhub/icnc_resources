@@ -3,8 +3,8 @@
 	<xacro:macro name="i608_ros2_control" params="name">
 		<ros2_control name="${name}" type="system">
 			<hardware>
-				<!-- <plugin>icnc_hardware_interfaces/I608HardwareInterface</plugin> -->
-				<plugin>icnc_fake_hardware_interfaces/I608FakeHardwareInterface</plugin>
+				<plugin>icnc_hardware_interfaces/I608HardwareInterface</plugin>
+				<!-- <plugin>icnc_fake_hardware_interfaces/I608FakeHardwareInterface</plugin> -->
 			</hardware>
 			<joint name="joint_1">
 				<command_interface name="position" />
