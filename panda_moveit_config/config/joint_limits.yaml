@@ -1,0 +1,27 @@
+joint_limits:
+  panda_joint1:
+    has_velocity_limits: true
+    max_velocity: 2.1750 # rad/s
+    has_jerk_limits: true
+    max_jerk: 5800 # rad/s^3
+  panda_joint2:
+    has_velocity_limits: true
+    max_velocity: 2.1750 # rad/s
+    has_jerk_limits: true
+    max_jerk: 1800 # rad/s^3
+  panda_joint3:
+    has_velocity_limits: true
+    max_velocity: 2.1750 # rad/s
+    has_jerk_limits: true
+    max_jerk: 2800 # rad/s^3
+  panda_joint4:
+    has_velocity_limits: true
+    max_velocity: 2.1750 # rad/s
+    has_jerk_limits: true
+    max_jerk: 3200 # rad/s^3
+  panda_joint5:
+    has_velocity_limits: true
+    max_velocity: 2.1750 # rad/s
+    has_jerk_limits: true
+    max_jerk: 6200 # rad/s^3
+
