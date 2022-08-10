@@ -50,7 +50,6 @@
 	"editor.inlineSuggest.enabled": true,
 	"python.analysis.inlayHints.variableTypes": true,
 	"python.analysis.inlayHints.functionReturnTypes": true,
-
 	"terminal.integrated.fontFamily": "Hasklug NF",
 	"editor.semanticHighlighting.enabled": true,
 	"editor.formatOnSave": true,
@@ -68,6 +67,9 @@
 	"python.linting.pylintPath": "/usr/local/bin/mypy",
 	"python.formatting.provider": "yapf", // or "black" here
 	"python.formatting.yapfPath": "/usr/local/bin/yapf",
+	// "python.formatting.yapfArgs": [
+	// 	"--style='{based_on_style: pep8, indent_width: 2}'"
+	// ],
 	"python.linting.pylintEnabled": true,
 	"python.linting.mypyEnabled": true,
 	"python.linting.lintOnSave": true,
