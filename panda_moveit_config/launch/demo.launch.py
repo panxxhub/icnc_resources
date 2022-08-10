@@ -23,8 +23,7 @@ def generate_launch_description():
           file_path="config/panda.urdf.xacro").robot_description_semantic(
               file_path="config/panda.srdf").trajectory_execution(
                   file_path="config/gripper_moveit_controllers.yaml")
-      .cartesian_limits(
-          file_path="config/pilz_cartesian_limits.yaml").planning_pipelines(
+          .planning_pipelines(
               pipelines=["ompl", "chomp"]).to_moveit_configs())
 
   # Start the actual move_group node/action server
