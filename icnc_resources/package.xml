@@ -18,6 +18,10 @@
   <exec_depend>icnc_resources_i3_description</exec_depend>
   <exec_depend>icnc_resources_i3_moveit_config</exec_depend>
 
+  <exec_depend>icnc_resources_panda_description</exec_depend>
+  <exec_depend>icnc_resources_panda_moveit_config</exec_depend>
+
+
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
 

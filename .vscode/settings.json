@@ -43,6 +43,14 @@
 		"waitables",
 		"xacro"
 	],
+	"editor.inlayHints.enabled": "on",
+	"editor.inlayHints.fontFamily": "'Jetbrains Mono', 'Cascadia Code', 'Fira Code Retina', Consolas, 'Courier New', monospace",
+	"editor.inlayHints.fontSize": 12,
+	"editor.inlayHints.padding": true,
+	"editor.inlineSuggest.enabled": true,
+	"python.analysis.inlayHints.variableTypes": true,
+	"python.analysis.inlayHints.functionReturnTypes": true,
+
 	"terminal.integrated.fontFamily": "Hasklug NF",
 	"editor.semanticHighlighting.enabled": true,
 	"editor.formatOnSave": true,

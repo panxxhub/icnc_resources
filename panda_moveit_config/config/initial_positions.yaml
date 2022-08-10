@@ -1,3 +1,4 @@
+# Default initial positions for the panda arm's ros2_control fake system
 initial_positions:
   panda_joint1: 0.0
   panda_joint2: -0.785
