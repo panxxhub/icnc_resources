@@ -1,6 +1,6 @@
 planning_plugin: chomp_interface/CHOMPPlanner
 request_adapters: >-
-  default_planner_request_adapters/AddTimeOptimalParameterization
+  icnc_planner_request_adapters/AddG2TimeOptimalParameterization
   default_planner_request_adapters/FixWorkspaceBounds
   default_planner_request_adapters/FixStartStateBounds
   default_planner_request_adapters/FixStartStateCollision

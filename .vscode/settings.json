@@ -18,7 +18,7 @@
 	"workbench.colorTheme": "Default Dark+",
 	"C_Cpp.autocomplete": "Default",
 	"C_Cpp.intelliSenseEngine": "Disabled",
-	"clangd.path": "clangd-14",
+	"clangd.path": "clangd-15",
 	"clangd.arguments": [
 		"--clang-tidy=true",
 		"--suggest-missing-includes=true",
@@ -56,6 +56,14 @@
 	"python.analysis.autoSearchPaths": true,
 	"python.analysis.completeFunctionParens": true,
 	"python.analysis.useLibraryCodeForTypes": true,
+	"python.linting.enabled": true,
+	"python.linting.pylintPath": "/usr/local/bin/mypy",
+	"python.formatting.provider": "yapf", // or "black" here
+	"python.formatting.yapfPath": "/usr/local/bin/yapf",
+	"python.linting.pylintEnabled": true,
+	"python.linting.mypyEnabled": true,
+	"python.linting.lintOnSave": true,
+	"python.linting.mypyPath": "/user/local/bin/mypy",
 	"vsintellicode.features.python.deepLearning": "enabled",
 	"vsintellicode.python.completionsEnabled": true,
 	"vsintellicode.sql.completionsEnabled": true,
