@@ -32,7 +32,7 @@ def generate_launch_description():
       executable="move_group",
       output="screen",
       parameters=[moveit_config.to_dict()],
-      arguments=["--ros-args", "--log-level", "debug"],
+      arguments=["--ros-args", "--log-level", "info"],
   )
 
   # RViz
